@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://i1903blogs.github.io</id>
+    <title>i1903blogs</title>
+    <updated>2020-07-03T04:15:17.803Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://i1903blogs.github.io"/>
+    <link rel="self" href="https://i1903blogs.github.io/atom.xml"/>
+    <subtitle>i1903studio的博客</subtitle>
+    <logo>https://i1903blogs.github.io/images/avatar.png</logo>
+    <icon>https://i1903blogs.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, i1903blogs</rights>
+</feed>
