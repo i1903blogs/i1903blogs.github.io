@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://i1903blogs.github.io</id>
     <title>i1903blogs</title>
-    <updated>2020-07-04T06:59:54.252Z</updated>
+    <updated>2020-07-04T07:31:25.104Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://i1903blogs.github.io"/>
     <link rel="self" href="https://i1903blogs.github.io/atom.xml"/>
@@ -27,8 +27,17 @@
 准备工作全做好了！😁            我们先打开微信并且登录      然后再在x32dbg选择文件-附加，找到&quot;wechat&quot;选择附加<img src="https://i1903blogs.github.io/post-images/1593840168083.png" alt="" loading="lazy"><p><u>图：附加微信</u></p><br>
 然后开始了精华的一步——<b>找到&quot;WeChatWin.dll&quot;</b><br />  如下图，我们依次点击符号-左下角搜索&quot;wechatwin&quot;，找到&quot;wechatwin.dll&quot;<b>并双击</b><br /><img src="https://i1903blogs.github.io/post-images/1593840470271.png" alt="" loading="lazy"><p><u>图：找出wechatwin.dll</u></p><br>
 距离成功就差一步——<b>修改：</b><br /><br>
-反编译出来微信用到撤回的是&quot;<b>revokemsg</b><br />&quot;那我们直接搜索字符串！        如图：先右键(https://i1903blogs.github.io/post-images/1593841216312.png)<p><u>图：选择搜索字符串</u><br>
-然后就可以搜索<b>revokemsg</b><br />了，如图<img src="https://i1903blogs.github.io/post-images/1593841353184.png" alt="" loading="lazy"><p><u>图：搜索revokemsg</u></p>
+反编译出来微信用到撤回的是&quot;<b>revokemsg</b><br />&quot;那我们直接搜索字符串！😆        如图：先右键(https://i1903blogs.github.io/post-images/1593841216312.png)<p><u>图：选择搜索字符串</u><br>
+然后就可以搜索<b>revokemsg</b><br />了，如图<img src="https://i1903blogs.github.io/post-images/1593841353184.png" alt="" loading="lazy"><p><u>图：搜索revokemsg</u><br>
+搜索完了如下图，进入这个&quot;revokemsg&quot;<img src="https://i1903blogs.github.io/post-images/1593847043028.png" alt="" loading="lazy"><p><u>图：进入revokemsg</u><br>
+经观测得应该如下图修改——将这个je的修改成jmp<img src="https://i1903blogs.github.io/post-images/1593847122415.png" alt="" loading="lazy"><p><u>图：修改</u>🙂🙂🙂</p>
+<p><b>最后：</b><br /><br>
+我们修改好了，那一定要保存哦~<br>
+在左侧区域，选择补丁-修补文件-将文件名命名为&quot;wechatwin.dll&quot;-保存(不要保存在微信目录里面，比如可以保存在桌面)<br>
+<img src="https://i1903blogs.github.io/post-images/1593847774443.png" alt="" loading="lazy"><p><u>图：保存</u><br>
+然后关闭x32dbg与微信，将导出的文件拖到微信目录下，选择替换，就大功告成了！<br>
+这么简单，还不去试试？！<br>
+<b>打赏作者：<a href="https://afdian.net/@i1903">https://afdian.net/@i1903</a></b><br /></p>
 ]]></content>
     </entry>
     <entry>
@@ -50,6 +59,7 @@
         <updated>2020-07-03T04:16:13.000Z</updated>
         <content type="html"><![CDATA[<p>7/1日建站，7/3日完工，值得庆祝！！！<br>
 本站负责人：190333/190318<br>
+官网：<br>
 联系：i1903studio@outlook.com<br>
 请注明博客</p>
 ]]></content>
