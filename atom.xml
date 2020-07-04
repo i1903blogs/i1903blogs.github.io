@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://i1903blogs.github.io</id>
     <title>i1903blogs</title>
-    <updated>2020-07-04T07:31:25.104Z</updated>
+    <updated>2020-07-04T07:41:07.098Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://i1903blogs.github.io"/>
     <link rel="self" href="https://i1903blogs.github.io/atom.xml"/>
@@ -35,8 +35,9 @@
 我们修改好了，那一定要保存哦~<br>
 在左侧区域，选择补丁-修补文件-将文件名命名为&quot;wechatwin.dll&quot;-保存(不要保存在微信目录里面，比如可以保存在桌面)<br>
 <img src="https://i1903blogs.github.io/post-images/1593847774443.png" alt="" loading="lazy"><p><u>图：保存</u><br>
-然后关闭x32dbg与微信，将导出的文件拖到微信目录下，选择替换，就大功告成了！<br>
+然后关闭x32dbg与微信，将导出的文件拖到微信目录下，选择替换，就大功告成了！<img src="https://i1903blogs.github.io/post-images/1593848256801.png" alt="" loading="lazy"><p><u>图：替换</u><br>
 这么简单，还不去试试？！<br>
+<img src="https://i1903blogs.github.io/post-images/1593848459821.png" alt="" loading="lazy"><br>
 <b>打赏作者：<a href="https://afdian.net/@i1903">https://afdian.net/@i1903</a></b><br /></p>
 ]]></content>
     </entry>
