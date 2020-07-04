@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>无需写代码，亲手实现微信防撤回 | i1903blogs</title>
-<link rel="shortcut icon" href="https://i1903blogs.github.io/favicon.ico?v=1593849647255">
+<link rel="shortcut icon" href="https://i1903blogs.github.io/favicon.ico?v=1593849787091">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://i1903blogs.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="无需写代码，亲手实现微信防撤回 | i1903blogs - Atom Feed" href="https://i1903blogs.github.io/atom.xml">
@@ -13,8 +13,9 @@
 
     <meta name="description" content="前言：
 微信能撤回2分钟的消息，看到了朋友撤回了消息，是不是很好奇呢。道高一尺魔高一丈😜，今天，小编来带大家亲手制作一个防撤回😍
+这是电脑版哦！~
 准备：
-首先我们要用到x32dbg，没有的同学请先下载哦~（下载地址：http://snapshots.x..." />
+首先我们要用到x32dbg，没有的同学请先下载哦~（下载地址：http://sn..." />
     <meta name="keywords" content="逆向,hack,Wechat,blogs" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -24,7 +25,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://i1903blogs.github.io">
-  <img class="avatar" src="https://i1903blogs.github.io/images/avatar.png?v=1593849647255" alt="">
+  <img class="avatar" src="https://i1903blogs.github.io/images/avatar.png?v=1593849787091" alt="">
   </a>
   <h1 class="site-title">
     i1903blogs
@@ -119,9 +120,10 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>前言：<br>
-微信能撤回2分钟的消息，看到了朋友撤回了消息，是不是很好奇呢。道高一尺魔高一丈😜，今天，小编来带大家亲手制作一个防撤回😍</p>
-<p>准备：<br>
+                <p>前言：</p>
+<p>微信能撤回2分钟的消息，看到了朋友撤回了消息，是不是很好奇呢。道高一尺魔高一丈😜，今天，小编来带大家亲手制作一个防撤回😍<br>
+<b>这是电脑版哦！~</b><br /><br>
+准备：<br>
 <b>首先我们要用到x32dbg，没有的同学请先下载哦~（下载地址：http://snapshots.x64dbg.com/）</b><br /><br>
 我们还要明确一个概念，微信撤回都是用到一个叫&quot;<b>WeChatWin.dl</b><br />l&quot;文件的，那我们就需要拿这个来下手！<img src="https://i1903blogs.github.io/post-images/1593840720601.png" alt="" loading="lazy"><p><u>图：微信主要模块的作用</u></p><br>
 <b>打开x32dbg</b><br />，语言是跟随系统的，如果不是就像下图一样调过来    (虽然有些同学精通英语，但可能不懂一些计算机的专有词汇，所以建议新手们可以改过来，那我这边也都用中文做配图了😄~)<br>
