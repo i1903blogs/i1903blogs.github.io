@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>无需写代码，亲手实现微信防撤回 | i1903blogs</title>
-<link rel="shortcut icon" href="https://i1903blogs.github.io/favicon.ico?v=1593848537504">
+<link rel="shortcut icon" href="https://i1903blogs.github.io/favicon.ico?v=1593848818759">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://i1903blogs.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="无需写代码，亲手实现微信防撤回 | i1903blogs - Atom Feed" href="https://i1903blogs.github.io/atom.xml">
@@ -12,7 +12,7 @@
 
 
     <meta name="description" content="前言：
-微信能撤回2分钟的消息，看到了朋友撤回了消息，是不是很好奇呢，道高一尺魔高一丈😜，今天，小编来带大家亲手制作一个防撤回😍
+微信能撤回2分钟的消息，看到了朋友撤回了消息，是不是很好奇呢。道高一尺魔高一丈😜，今天，小编来带大家亲手制作一个防撤回😍
 准备：
 首先我们要用到x32dbg，没有的同学请先下载哦~（下载地址：http://snapshots.x..." />
     <meta name="keywords" content="逆向,hack,Wechat,blogs" />
@@ -24,7 +24,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://i1903blogs.github.io">
-  <img class="avatar" src="https://i1903blogs.github.io/images/avatar.png?v=1593848537504" alt="">
+  <img class="avatar" src="https://i1903blogs.github.io/images/avatar.png?v=1593848818759" alt="">
   </a>
   <h1 class="site-title">
     i1903blogs
@@ -120,7 +120,7 @@
             <div class="post-content-wrapper">
               <div class="post-content">
                 <p>前言：<br>
-微信能撤回2分钟的消息，看到了朋友撤回了消息，是不是很好奇呢，道高一尺魔高一丈😜，今天，小编来带大家亲手制作一个防撤回😍</p>
+微信能撤回2分钟的消息，看到了朋友撤回了消息，是不是很好奇呢。道高一尺魔高一丈😜，今天，小编来带大家亲手制作一个防撤回😍</p>
 <p>准备：<br>
 <b>首先我们要用到x32dbg，没有的同学请先下载哦~（下载地址：http://snapshots.x64dbg.com/）</b><br /><br>
 我们还要明确一个概念，微信撤回都是用到一个叫&quot;<b>WeChatWin.dl</b><br />l&quot;文件的，那我们就需要拿这个来下手！<img src="https://i1903blogs.github.io/post-images/1593840720601.png" alt="" loading="lazy"><p><u>图：微信主要模块的作用</u></p><br>
@@ -130,7 +130,7 @@
 准备工作全做好了！😁            我们先打开微信并且登录      然后再在x32dbg选择文件-附加，找到&quot;wechat&quot;选择附加<img src="https://i1903blogs.github.io/post-images/1593840168083.png" alt="" loading="lazy"><p><u>图：附加微信</u></p><br>
 然后开始了精华的一步——<b>找到&quot;WeChatWin.dll&quot;</b><br />  如下图，我们依次点击符号-左下角搜索&quot;wechatwin&quot;，找到&quot;wechatwin.dll&quot;<b>并双击</b><br /><img src="https://i1903blogs.github.io/post-images/1593840470271.png" alt="" loading="lazy"><p><u>图：找出wechatwin.dll</u></p><br>
 距离成功就差一步——<b>修改：</b><br /><br>
-反编译出来微信用到撤回的是&quot;<b>revokemsg</b><br />&quot;那我们直接搜索字符串！😆        如图：先右键(https://i1903blogs.github.io/post-images/1593841216312.png)<p><u>图：选择搜索字符串</u><br>
+反编译出来微信用到撤回的是&quot;<b>revokemsg</b><br />&quot;那我们直接搜索字符串！😆        如图：先右键<img src="https://i1903blogs.github.io/post-images/1593848816479.png" alt="" loading="lazy"><p><u>图：选择搜索字符串</u><br>
 然后就可以搜索<b>revokemsg</b><br />了，如图<img src="https://i1903blogs.github.io/post-images/1593841353184.png" alt="" loading="lazy"><p><u>图：搜索revokemsg</u><br>
 搜索完了如下图，进入这个&quot;revokemsg&quot;<img src="https://i1903blogs.github.io/post-images/1593847043028.png" alt="" loading="lazy"><p><u>图：进入revokemsg</u><br>
 经观测得应该如下图修改——将这个je的修改成jmp<img src="https://i1903blogs.github.io/post-images/1593847122415.png" alt="" loading="lazy"><p><u>图：修改</u>🙂🙂🙂</p>
